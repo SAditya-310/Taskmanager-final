@@ -1,126 +1,108 @@
-#**📋 Task Manager – Productivity Web Application**
+# 📋 Task Manager – Productivity Web Application
 
-A high-performance **task management web application** built using the **MERN Stack**.
-This project focuses on **intelligent task prioritization using data structures** to ensure the most critical work is always prioritized.
+A **task management web application built with the MERN stack** that focuses on **smart task prioritization using data structures**.
+Instead of a simple to-do list, this app highlights the **most important task** so users can focus on what matters most.
 
 ---
 
-# 📌 Project Overview
+# 📌 Overview
 
-Unlike a standard **To-Do list**, TaskFlow uses a **Priority-Weighting Algorithm** to rank tasks dynamically.
+This project includes:
 
-It also provides:
+* A **dashboard** to create and manage tasks
+* A **smart home page** that highlights the most important task
+* A **profile page with analytics** to track productivity
 
-* A **dedicated analytics profile** to track productivity
-* A **dynamic dashboard** for task creation and management
-* A **smart home page** that surfaces the most important task automatically
+The goal is to make task management **more intelligent and efficient**.
+
+---
 
 # 🛠 Features
 
-## 1️⃣ Interactive Navigation
+## Navigation
 
-* **Home**
-  Your command center displaying the highest priority task.
-
-* **Dashboard**
-  The engine where tasks are created, edited, and managed.
-
-* **Profile**
-  Displays user information and other important details
+* **Home** – Shows the highest priority task
+* **Dashboard** – Create and manage tasks
+* **Profile** – Displays user information and analytics
 
 ---
 
-## 2️⃣ Dashboard – Task Management
+## Dashboard (Task Management)
 
-* **Task Input System**
-  Add tasks with title, description, and due date.
-
-* **Importance Scale**
-  Assign an importance level from **1 – 10** to each task.
-
-* **Real-Time Updates**
-  Tasks appear instantly using React state management without page refresh.
+* Add tasks with **title, description, and due date**
+* Set **importance level (1–10)** for each task
+* **Real-time updates** so tasks appear instantly without refreshing
 
 ---
 
-## 3️⃣ Home Page – Smart View
+## Home Page
 
 ### ⭐ Priority Bar
 
-The central feature of the application.
-
-It dynamically displays the **Most Important Task** based on a weighted priority algorithm.
+Displays the **most important task** based on a priority algorithm.
 
 ### 📊 Activity Feed
 
-Displays the **two most recently completed tasks**, helping users track immediate progress.
+Shows the **two most recently completed tasks** so users can quickly see their progress.
 
 ---
 
-## 4️⃣ User Profile & Analytics
+## Profile & Analytics
 
-### 👤 Identity Tracking
+### 👤 User Information
 
-Stores and displays user:
+Stores and displays:
 
 * Name
 * Email
 
-### 📈 Efficiency Metrics
+### 📈 Efficiency Metric
 
 **Accuracy Percentage**
-
-A dynamic metric used to measure reliability:
 
 ```
 Accuracy % = (Completed Tasks / Total Tasks) × 100
 ```
 
-This helps track how efficiently tasks are being completed before expiration.
+This shows how efficiently tasks are completed before they expire.
 
-### 📜 Task Completion History
+### 📜 Task History
 
-A complete record of all successfully completed tasks.
+A list of all completed tasks for tracking productivity.
 
 ---
 
-# 🧠 Data Structures & Core Logic
+# 🧠 Core Logic
 
-To determine the **Most Important Task**, the system uses **Priority Queue logic**.
+The app uses a **Priority Queue concept** to determine the most important task.
 
-Instead of simple sorting, each task receives a **priority weight** based on importance and urgency.
-
-### Priority Weight Formula
+Each task is given a **priority weight** based on importance and urgency.
 
 ```
 Priority Weight = (Importance × 0.7) + (Urgency Factor × 0.3)
 ```
 
-This ensures that:
-
-* High-importance tasks
-* Tasks with approaching deadlines
-
-are automatically surfaced in the **Priority Bar** on the Home page.
+This ensures that **important tasks with close deadlines appear first** on the home page.
 
 ---
 
 # 💻 Tech Stack
 
-### Frontend
+**Frontend**
 
 * React.js
 * React Hooks
 * Context API
 
-### Backend
+**Backend**
 
 * Node.js
 * Express.js
 
-### Database
+**Database**
 
 * MongoDB
 
+---
 
-Built as a full-stack project focusing on **data structures applied to real productivity tools.**
+Built as a **full-stack MERN project demonstrating how data structures can improve productivity tools.**
