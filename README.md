@@ -1,108 +1,83 @@
-# 📋 Task Manager – Productivity Web Application
+# Task Manager – MERN Productivity App
 
-A **task management web application built with the MERN stack** that focuses on **smart task prioritization using data structures**.
-Instead of a simple to-do list, this app highlights the **most important task** so users can focus on what matters most.
+A task management web application built using the MERN stack.
+The app focuses on **smart task prioritization using data structures**, helping users quickly identify the most important task instead of managing a basic to-do list.
 
 ---
 
-# 📌 Overview
+## Overview
 
 This project includes:
 
-* A **dashboard** to create and manage tasks
-* A **smart home page** that highlights the most important task
-* A **profile page with analytics** to track productivity
+* A dashboard to create and manage tasks
+* A home page that highlights the most important task
+* A profile page that shows user details and productivity analytics
 
-The goal is to make task management **more intelligent and efficient**.
+The goal is to make task management **simple, efficient, and smarter**.
 
 ---
 
-# 🛠 Features
+## Features
 
-## Navigation
+### Navigation
 
-* **Home** – Shows the highest priority task
+* **Home** – Displays the highest priority task
 * **Dashboard** – Create and manage tasks
-* **Profile** – Displays user information and analytics
+* **Profile** – Shows user details and analytics
 
----
-
-## Dashboard (Task Management)
+### Task Management
 
 * Add tasks with **title, description, and due date**
-* Set **importance level (1–10)** for each task
+* Set **importance level (1–10)**
 * **Real-time updates** so tasks appear instantly without refreshing
 
----
+### Home Page
 
-## Home Page
+* Shows the **most important task** using a priority algorithm
+* Displays the **two most recently completed tasks**
 
-### ⭐ Priority Bar
+### Profile & Analytics
 
-Displays the **most important task** based on a priority algorithm.
-
-### 📊 Activity Feed
-
-Shows the **two most recently completed tasks** so users can quickly see their progress.
-
----
-
-## Profile & Analytics
-
-### 👤 User Information
-
-Stores and displays:
-
-* Name
-* Email
-
-### 📈 Efficiency Metric
-
-**Accuracy Percentage**
+* Stores **name and email**
+* Calculates **Accuracy Percentage**
 
 ```
 Accuracy % = (Completed Tasks / Total Tasks) × 100
 ```
 
-This shows how efficiently tasks are completed before they expire.
-
-### 📜 Task History
-
-A list of all completed tasks for tracking productivity.
+* Shows a history of completed tasks
 
 ---
 
-# 🧠 Core Logic
+## Core Logic
 
-The app uses a **Priority Queue concept** to determine the most important task.
-
-Each task is given a **priority weight** based on importance and urgency.
+The system uses a **priority queue concept** to determine the most important task.
 
 ```
 Priority Weight = (Importance × 0.7) + (Urgency Factor × 0.3)
 ```
 
-This ensures that **important tasks with close deadlines appear first** on the home page.
+This ensures that tasks with **higher importance and closer deadlines appear first**.
 
 ---
 
-# 💻 Tech Stack
+## Tech Stack
 
-**Frontend**
+Frontend
 
 * React.js
 * React Hooks
 * Context API
 
-**Backend**
+Backend
 
 * Node.js
 * Express.js
 
-**Database**
+Database
 
 * MongoDB
 
 ---
 
-Built as a **full-stack MERN project demonstrating how data structures can improve productivity tools.**
+A full-stack MERN project demonstrating how **data structures can improve productivity tools**.
